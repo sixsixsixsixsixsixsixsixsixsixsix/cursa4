@@ -1,0 +1,282 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+	min-height: 100vh;
+    flex-direction: column;
+    font-family: "Comfortaa";
+	background-image: url('pictures/back2.jpg');
+}
+
+.wapka{
+	position: relative;
+	display: flex;
+	justify-content: end;
+	padding: 30px;
+	z-index: 5;
+	gap: 50px;
+}
+
+.wapka a, li{
+	position: relative;
+	top: 10px;
+	right: 8%;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 666;
+	text-decoration: none;
+	color: white;
+	list-style: none;
+	transition: color 0.5s ease;
+}
+
+.wapka a:hover{
+	color: #3b61bf;
+}
+
+/* Стили для текста */
+
+h1{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+p{	
+	font-size: 20px;
+	font-weight: 666;
+}
+
+.txt{
+	position: relative;
+	color: white;
+	text-align: center;
+	top: 15%;
+}
+.logo {
+	position: relative;
+	right: 67%;
+    width: 65px; /* нужные размеры логотипа */
+    height: 65px; /* нужные размеры логотипа */
+    background-image: url('pictures/ava.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* карточки с учёными */
+	  
+.flip-card {
+  margin: 20px;
+  position: relative;
+  top: 45%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 150px;
+}
+
+.flip-card a{
+	display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.flip-card a:hover{
+	background: black;
+	border: 1px solid white;
+	color: white;
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 380px;
+  min-height: 600px;
+  height: auto;
+  background-color: #000000;
+  background-image: url(https://umnazia.ru/wp-content/uploads/2021/01/Nikola-Tesla.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flip-card:nth-of-type(2) .flip-card-front,
+.flip-card:nth-of-type(2) .flip-card-back {
+  background-image: url(https://alpinabook.ru/upload/resize_cache/iblock/6f9/550_800_1/6f9f5be9fb84ad912ca92b5a0839d9ef.jpg);
+}
+
+.flip-card:nth-of-type(3) .flip-card-front,
+.flip-card:nth-of-type(3) .flip-card-back {
+  background-image: url(https://new-science.ru/wp-content/uploads/2019/10/45272-24.jpg);
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+}
+
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front::after,
+.flip-card-back::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #0a0a0a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.flip-card-front .inner,
+.flip-card-back .inner {
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  z-index: 2;
+}
+
+.inner .icon {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.inner h3 {
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.inner p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.flip-card:hover .flip-card-front {
+  transform: rotateY(-180deg);
+}
+
+.flip-card:hover .flip-card-back {
+  transform: rotateY(0deg);
+}
+
+.podval {
+	position: relative;
+	top: 33%;
+	color: white;
+	text-align: center;
+	padding: 40px;
+}
+
+.podval h3 {
+	font-size: 20px;
+	font-weight: 777;
+}
+
+.podval h3 {
+	position: relative;
+	top: 10px;
+}
+
+.podval a{
+	font-size: 23px;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  .txt {
+	position: relative;
+    padding: 10px;
+	left: 70px;
+  }
+  
+    .txt blockquote, p{
+	font-size: 13px;
+    }
+	
+	.txt h1{
+	font-size: 18px;
+    }
+  
+  .wapka{
+	  position: relative;
+	  left: 100px;
+  }
+  
+    .wapka a{
+	  font-size: 13px;
+	}
+  
+  .logo{
+	  display: none;
+  }
+  
+  .cards {
+	display: flex;
+	position: relative;
+    flex-direction: column;
+	bottom: 820px;
+	left: 35px;
+  }
+
+  .flip-card {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  
+  .podval{
+	  position: relative;
+	  left: 80px;
+  }
+  
+  .podval {
+	  position: relative;
+	  left: 80px;
+  }
+  .podval h3{
+	  font-size: 16px;
+  }
+  
+}
