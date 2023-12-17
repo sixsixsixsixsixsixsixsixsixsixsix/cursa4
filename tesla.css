@@ -1,0 +1,132 @@
+        body {
+            font-family: Comfortaa;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		
+		.wapka{
+			position: relative;
+			display: flex;
+			justify-content: end;
+			z-index: 5;
+			padding: 20px;
+			gap: 50px;
+		}
+		
+		.logo {
+			position: relative;
+			right: 95%;
+			width: 65px; /* нужные размеры логотипа */
+			height: 65px; /* нужные размеры логотипа */
+			background-image: url('pictures/ava.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.wapka a {
+			position: relative;
+			left: 200px;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: 666;
+			text-decoration: none;
+			color: black;
+			list-style: none;
+			transition: color 0.5s ease;
+		}
+		.wapka li {
+			position: relative;
+			left: 200px;
+			list-style: none;
+		}
+
+		.wapka a:hover{
+			color: #3b61bf;
+		}
+
+		.card{
+			background: #dbd5d5;
+		}
+		
+		.card p{
+			font-size: 23px;
+			background: white;
+			font-weight: 777;
+			text-transform: uppercase;
+			position: relative;
+			top: 15px;
+		}
+		
+		.card{
+			text-align: center;
+		}
+		
+		.card img{
+			border-radius: 20px;
+		}
+        .texts h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .texts strong {
+            font-weight: bold;
+        }
+
+        .texts p {
+            margin-top: 5px;
+        }
+
+        .texts ul {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+		.citat h3{
+			position: relative;
+			left: 655px;
+		}
+		
+.podval {
+	position: relative;
+	top: 20%;
+	background-image: url('pictures/snegs.gif');
+	color: black;
+	text-align: center;
+}
+
+.podval h3 {
+	font-size: 20px;
+	font-weight: 777;
+}
+
+.podval h3 {
+	position: relative;
+	top: 10px;
+}
+
+.podval a{
+	font-size: 23px;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+ @media (max-width: 768px) {
+	 
+	 .wapka{
+		 position: relative;
+		 right: 135%;
+	 }
+	 
+	 .wapka a{
+		 font-size: 13px;
+	 }   
+}
